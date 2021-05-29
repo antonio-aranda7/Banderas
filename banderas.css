@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background: gray;
+  }
+  
+  .contenedor {
+    position: relative;
+  }
+  /*
+  .izquierda {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+  }
+  .derecha {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .centro {
+    position: absolute;
+    top: 200px;
+    left: 25%;
+  }*/

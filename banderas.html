@@ -4,34 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="banderas.css" media="all" />
+    <title>Banderas</title>
 </head>
 <body>
-    <h2>HTML Forms</h2>
-<!--  -->
-    <form action="responds.php" method="post">
-        <div id="formtext">region</div>
-        <input type="text" name="region">
+    <h2>Consumo de un Json</h2>
     
-        <input type="submit" name="submit" value="Submit">
-    </form>
-    <form action="responds.php" method="post">
-        <div id="formtext">parametro1</div>
-        <input type="text" name="parametro1">
-    
-        <input type="submit" name="submit" value="Submit">
-    </form>
-    <form action="responds.php" method="post">
-        <div id="formtext">parametros</div>
-        <input type="text" name="parametro2">
-    
-        <input type="submit" name="submit" value="Submit">
-    </form>
-    <form action="responds.php" method="post">
-        <div id="formtext">parametro3</div>
-        <input type="text" name="parametro3">
-    
-        <input type="submit" name="submit" value="Submit">
+    <form action="banderas.php" method="post">
+        <div class="contenedor">
+            <!-- REGION -->
+            <div class="izquierda">
+                <h2>Escribe que region quieres buscar</h2>
+                <p>europe, asia, americas, oceania, africa</p>
+
+                <div id="formtext"> region
+                    <input type="text" id="region" name="region" value="americas">
+                </div>
+                
+            </div>
+            <!-- parametros -->
+            <div class="derecha">
+                <h2>Elige los campos que deseas ver</h2>
+
+                <p>name, capita, bandera, </p>
+
+                <div id="formtext"> Nombre
+                    <input type="text" id="parametro1" name="parametro1" value="name">
+                </div>
+                
+                <div id="formtext"> Capital 
+                    <input type="text" id="parametro2" name= "parametro2" value="capital">
+                </div>
+                
+                <div id="formtext"> Bandera
+                    <input type="text id="parametro3" name="parametro3"value="flag">
+                </div>
+                
+            </div>
+
+            <div class="centro">
+                <input type="submit" name="submit" value="Submit">
+            </div>
+        </div>
     </form>
 </body>
 </html>
